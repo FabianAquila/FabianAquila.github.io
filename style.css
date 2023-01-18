@@ -1,0 +1,392 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family:'Open Sans', sans-serif; 
+}
+
+
+
+#perfil{
+ border-radius: 75px;
+ width: 150px;
+ margin-left: 400px;
+ margin-top: 20px;
+ border: 3px solid rgb(238, 238, 248);
+ 
+}
+
+header {
+  
+    background-color: rgb(35, 35, 139);
+    width:100%;
+    height: 200px;
+}
+
+
+#titulo {
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(35, 35, 139);;
+    color: white;
+    margin-bottom: -70px;
+}
+
+
+.infopersonal {
+
+   padding: 45px;
+   border: 1px solid rgb(35, 35, 139);
+   font-size: 20px;
+   width: 890px;
+   border-radius: 30px;
+   margin-top: 20px;
+   
+}
+
+.listaper {
+   list-style-image: url(imagenes/flecha.png)
+
+}
+
+
+.conteinergeneral{
+  display:grid;
+  grid-template-rows: 10% 20%;
+  width:auto;
+  padding: 20px;
+  justify-content:center;
+  
+}
+
+
+.conteiner {
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction:column-reverse;
+  padding: 20px;
+  margin: 20px;
+  
+
+ 
+
+}
+
+
+#exp{
+  background-color: rgb(35, 35, 139);
+  width: 30%;
+  height:4%;
+  padding: 20px;
+  color: white;
+  border-radius: 30px;
+  
+}
+
+
+#idioma {
+
+  background-color: rgb(35, 35, 139);
+  width: 30%;
+  height: 3%;
+  padding: 20px;
+  color: white;
+  border-radius: 30px;
+  
+}
+
+#persona{
+  background-color: rgb(35, 35, 139);
+  width: 30%;
+  height: 30%;
+  padding: 20px;
+  color: white;
+  border-radius: 30px;
+  margin-bottom: -220px;
+  margin-top: 200px;
+  
+  
+
+}
+
+
+.redes {
+  position: relative;
+  display:inline-block;
+  margin-left: 20px;
+  justify-content: space-between;
+  color: white;
+
+}
+
+
+
+
+
+#educacion{
+  background-color: rgb(35, 35, 139);
+  width: 30%;
+  height: 80%;
+  padding: 20px;
+  color: white;
+  border-radius: 30px;
+
+}
+
+
+#habilidades{
+  background-color: rgb(35, 35, 139);
+  width: 30%;
+  height: 4%;
+  padding: 20px;
+  color: white;
+  border-radius: 30px;
+
+}
+
+#aptitudes{
+  background-color: rgb(35, 35, 139);
+  width: 30%;
+  height: 4%;
+  padding: 20px;
+  color: white;
+  border-radius: 30px;
+
+}
+
+#boton {
+  background-color: rgb(35, 35, 139);
+  width: 30%;
+  font-size: 30px;
+  height: 9%;
+  padding: 20px;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+  border-radius: 20px;
+  
+  
+  
+
+}
+
+
+#boton:hover {
+  background-color: white;
+  width: 30%;
+  font-size: 30px;
+  height: 9%;
+  padding: 20px;
+  color: rgb(35, 35, 139);
+  
+
+}
+
+
+
+#mostrar {
+  display: none;
+  animation-name: ver;
+  animation-duration: 2s;
+   
+}
+ @keyframes ver {
+   from {opacity: 0;}
+   to {opacity:1}
+
+
+ }
+
+
+ footer {
+  background-color: rgb(35, 35, 139);
+  padding: 50px;
+  text-align: center;
+  display: block;
+  height: auto;
+  width: auto;
+  margin-top: 900px;
+  color: white;
+  
+
+ }
+
+
+#tituloform {
+ position: relative;
+ top: 600px;
+ margin: 20px;
+ margin-left: 270px;
+ margin-bottom: -170px;
+ background-color: rgb(35, 35, 139);
+ color: white;
+ width: 120px;
+ height: 40px;
+ padding: 40px;
+ border-radius: 200px;
+
+ 
+
+}
+
+form {
+ position: relative;
+ top: 700px;
+ margin: 200px;
+ 
+
+}
+
+label {
+ display: block;
+ margin: 90px;
+ 
+ 
+}
+
+
+#textmensaje {
+  margin-bottom: 190px;
+
+
+}
+
+
+#textarea {
+  margin-bottom: 100px;
+  border-radius: 20px;
+  margin-top: -200px;
+  margin-left: 90px;
+
+
+}
+
+input {
+  margin-top: 0px;
+  width: 20%;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: white;
+}
+
+
+
+ #enviar {
+  margin: 90px;
+  background-color: rgb(35, 35, 139);
+  width: 15%;
+  font-size: 20px;
+  height: 9%;
+  padding: 20px;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+  border-radius: 20px;
+  position: relative;
+  margin-left: -350px;
+  
+  
+ }
+
+ 
+
+ #enviar:hover {
+  background-color: white;
+  width: 15%;
+  font-size: 20px;
+  height: 9%;
+  padding: 20px;
+  color: rgb(35, 35, 139);}
+
+
+ .menuh {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  
+
+}
+
+nav {
+  background-color: rgb(35, 35, 139);
+  font-size: 20px;
+  opacity: 0.9;
+  border: solid rgb(175, 35, 35) 1px;
+
+}
+
+.menuh li a {
+  display: block;
+  padding: 15px 20px;
+  color:rgb(250, 250, 250);
+  text-decoration: none;
+  
+
+}
+
+.menuh li:hover {
+  background-color: rgb(42, 57, 139);
+  color:#ffffff;
+  
+
+}
+
+.menuv {
+  position: absolute;
+  display: none;
+  list-style: none;
+  width: 200px;
+  background-color: rgb(35, 35, 139);
+
+}
+
+.menuh li:hover .menuv {
+  display: block;
+
+}
+
+.menuv li:hover {
+  background-color:rgb(35, 35, 139);
+  color: white;
+}
+
+.menuv li a {
+  display: block;
+  color: rgb(255, 255, 255);
+  padding: 15px 15px 15px 20px;
+
+}
+
+nav {
+  margin-top: 202px;
+
+}
+
+
+ul li a {
+
+  color: white;
+  font-weight: bolder;
+  font-size: 25px;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+}
+
+ul li a:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(35, 35, 139);
+  transition: 0.5s;
+
+}
+
+#contmenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  max-width: 120rem;
+  width: 70%;
+  margin: 0 auto;
+
+}
