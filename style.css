@@ -3,8 +3,13 @@
   margin: 0;
   padding: 0;
   font-family:'Open Sans', sans-serif; 
+  scroll-behavior: smooth;
 }
 
+body{
+ transition: 0.4s;
+ 
+}
 
 
 #perfil{
@@ -29,7 +34,7 @@ header {
     padding: 10px;
     background-color: rgb(35, 35, 139);;
     color: white;
-    margin-bottom: -70px;
+    margin-bottom: -10px;
 }
 
 
@@ -40,13 +45,15 @@ header {
    font-size: 20px;
    width: 890px;
    border-radius: 30px;
-   margin-top: 20px;
+   margin-top: -40px;
+   margin-bottom: -10px;
+  
    
 }
 
 .listaper {
-   list-style-image: url(imagenes/flecha.png)
-
+   list-style-image: url(imagenes/flecha.png);
+  
 }
 
 
@@ -56,6 +63,7 @@ header {
   width:auto;
   padding: 20px;
   justify-content:center;
+  
   
 }
 
@@ -74,11 +82,10 @@ header {
 
 
 #exp{
-  background-color: rgb(35, 35, 139);
+  color: rgb(35, 35, 139);
   width: 30%;
   height:4%;
   padding: 20px;
-  color: white;
   border-radius: 30px;
   
 }
@@ -86,24 +93,22 @@ header {
 
 #idioma {
 
-  background-color: rgb(35, 35, 139);
+  color: rgb(35, 35, 139);
   width: 30%;
   height: 3%;
-  padding: 20px;
-  color: white;
+  padding: 20px; 
   border-radius: 30px;
   
 }
 
 #persona{
-  background-color: rgb(35, 35, 139);
+  color: rgb(35, 35, 139);
   width: 30%;
   height: 30%;
   padding: 20px;
-  color: white;
   border-radius: 30px;
-  margin-bottom: -220px;
-  margin-top: 200px;
+  margin-bottom: -300px;
+  margin-top: 190px;
   
   
 
@@ -124,32 +129,29 @@ header {
 
 
 #educacion{
-  background-color: rgb(35, 35, 139);
+  color: rgb(35, 35, 139);
   width: 30%;
   height: 80%;
   padding: 20px;
-  color: white;
   border-radius: 30px;
 
 }
 
 
 #habilidades{
-  background-color: rgb(35, 35, 139);
+  color: rgb(35, 35, 139);
   width: 30%;
   height: 4%;
   padding: 20px;
-  color: white;
   border-radius: 30px;
 
 }
 
 #aptitudes{
-  background-color: rgb(35, 35, 139);
+  color: rgb(35, 35, 139);
   width: 30%;
   height: 4%;
   padding: 20px;
-  color: white;
   border-radius: 30px;
 
 }
@@ -164,6 +166,7 @@ header {
   cursor: pointer;
   transition: 0.5s;
   border-radius: 20px;
+  margin-top: 100px;
   
   
   
@@ -181,6 +184,49 @@ header {
   
 
 }
+
+
+.descargarcv {
+  background-color: rgb(175, 35, 35);
+  width: 200px;
+  font-size: 20px;
+  height: 2%;
+  padding: 20px;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+  border-radius: 50px;
+  margin-top: 100px;
+  margin-left: 650px;
+  
+  
+  
+
+}
+
+.descargarcv a {
+  text-decoration: none;
+  color: white;
+}
+
+
+
+
+
+.descargarcv:hover {
+  background-color: white;
+  width: 200px;
+  font-size: 20px;
+  height: 2%;
+  padding: 20px;
+  
+  
+
+}
+
+.descargarcv:hover a { 
+  color: black;}
+
 
 
 
@@ -216,15 +262,14 @@ header {
  position: relative;
  top: 600px;
  margin: 20px;
- margin-left: 270px;
- margin-bottom: -170px;
- background-color: rgb(35, 35, 139);
- color: white;
+ margin-left: 230px;
+ margin-bottom: -270px;
+ color: rgb(35, 35, 139);
  width: 120px;
  height: 40px;
  padding: 40px;
  border-radius: 200px;
-
+ margin-top: -120px;
  
 
 }
@@ -284,6 +329,7 @@ input {
   border-radius: 20px;
   position: relative;
   margin-left: -350px;
+  
   
   
  }
@@ -388,5 +434,626 @@ ul li a:hover {
   max-width: 120rem;
   width: 70%;
   margin: 0 auto;
+  margin-bottom: 60px;
 
+}
+
+h2:hover{
+  text-shadow: 0.1em 0.1em #333;
+  transition: 0.5s;
+
+}
+
+
+/*scroll to top*/
+
+.btn-scrolltop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 15px 20px;
+  background: white;
+  border: 1px solid black;
+  border-radius: 100%;
+  cursor: pointer;
+  transform: translateY(100px);
+  transition: 0.3s;
+}
+
+.btn-scrolltop-on {
+  transform: translateY(0);
+}
+
+/*modo oscuro */
+
+#darkmode{
+  display: inline-block;
+  background: url(imagenes/dark-mode.png) left center;
+  width: 99px;
+  height: 40px;
+  font-size: 0;
+  text-decoration: none;
+}
+
+
+
+body.dark{
+  background-color: #3d3a3a;
+}
+
+
+body.dark #darkmode{
+  background-position: right center;
+}
+
+
+body.dark .infopersonal {
+  background-color: white;
+ 
+}
+
+body.dark  #habilidades {
+ color: white;
+
+
+
+}
+
+body.dark  #persona {
+  color: white;
+ 
+ 
+ 
+ }
+
+ body.dark  #exp {
+  color: white;
+ 
+ 
+ 
+ }
+
+ body.dark  #educacion {
+  color: white;
+ 
+ 
+ 
+ }
+
+
+ body.dark  #idioma {
+  color: white;
+ 
+ 
+ 
+ }
+
+
+ body.dark  #aptitudes {
+  color: white;
+ 
+ 
+ 
+ }
+
+
+ body.dark  #tituloform {
+  color: white;
+ 
+ 
+ 
+ }
+
+
+ body.dark label {
+  color: white;
+ 
+ 
+ 
+ }
+
+
+ /*responsive hasta tamaño 807px */
+
+
+ @media (max-width: 1079px) {
+
+  .infopersonal {
+
+    padding: 45px;
+    border: 1px solid rgb(35, 35, 139);
+    font-size: 20px;
+    width: 700px;
+    border-radius: 30px;
+    margin-top: -40px;
+    margin-bottom: -10px;
+   
+    
+ }
+ 
+
+
+}
+
+
+@media (max-width: 1379px) {
+
+  label {
+    display: inline-block;
+    margin: 90px;
+    width: 700px;
+    
+   }
+
+
+}
+
+
+
+@media (max-width: 1379px) {
+.descargarcv {
+  background-color: rgb(175, 35, 35);
+  width: 200px;
+  font-size: 20px;
+  height: 2%;
+  padding: 20px;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+  border-radius: 50px;
+  margin-top: 100px;
+  margin-left: 600px;
+  
+  
+  
+
+}
+
+}
+
+
+
+
+@media (max-width: 1099px) {
+
+  label {
+    display: inline-block;
+    margin: 90px;
+    width: 600px;
+    
+   }
+
+
+}
+
+
+@media (max-width: 1099px) {
+.descargarcv {
+  background-color: rgb(175, 35, 35);
+  width: 200px;
+  font-size: 20px;
+  height: 2%;
+  padding: 20px;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+  border-radius: 50px;
+  margin-top: 100px;
+  margin-left: 500px;
+  
+  
+  
+
+}}
+
+
+@media (max-width: 1235px) {
+  .descargarcv {
+    background-color: rgb(175, 35, 35);
+    width: 200px;
+    font-size: 20px;
+    height: 2%;
+    padding: 20px;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 50px;
+    margin-top: 100px;
+    margin-left: 500px;
+    
+    
+    
+  
+  }}
+  
+
+ 
+@media (max-width: 1109px) {
+  .descargarcv {
+    background-color: rgb(175, 35, 35);
+    width: 200px;
+    font-size: 20px;
+    height: 2%;
+    padding: 20px;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 50px;
+    margin-top: 100px;
+    margin-left: 450px;
+    
+    
+    
+  
+  }}
+  
+
+  @media (max-width: 1002px) {
+    .descargarcv {
+      background-color: rgb(175, 35, 35);
+      width: 200px;
+      font-size: 20px;
+      height: 2%;
+      padding: 20px;
+      color: white;
+      cursor: pointer;
+      transition: 0.5s;
+      border-radius: 50px;
+      margin-top: 100px;
+      margin-left: 400px;
+      
+      
+      
+    
+    }}
+    
+    @media (max-width: 860px) {
+      .descargarcv {
+        background-color: rgb(175, 35, 35);
+        width: 200px;
+        font-size: 20px;
+        height: 2%;
+        padding: 20px;
+        color: white;
+        cursor: pointer;
+        transition: 0.5s;
+        border-radius: 50px;
+        margin-top: 100px;
+        margin-left: 300px;
+        
+        
+        
+      
+      }}
+      
+
+
+@media (max-width: 997px) {
+
+  label {
+    display: inline-block;
+    margin: 90px;
+    width: 500px;
+    
+   }
+
+
+}
+
+@media (max-width: 897px) {
+
+  label {
+    display: block;
+    margin: 90px;
+    width: 500px;
+    
+   }
+
+
+}
+
+
+
+@media (max-width: 1065px) {
+
+  #enviar {
+    margin: 90px;
+    background-color: rgb(35, 35, 139);
+    width: 20%;
+    font-size: 20px;
+    height: 9%;
+    padding: 20px;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 20px;
+    position: relative;
+    margin-left: -350px;
+    
+    
+    
+   }
+
+
+}
+
+
+@media (max-width: 1065px) {
+
+  #enviar:hover {
+    background-color: white;
+    width: 20%;
+    font-size: 20px;
+    height: 9%;
+    padding: 20px;
+    color: rgb(35, 35, 139);}
+  
+  }
+
+
+
+
+
+
+@media (max-width: 924px) {
+
+  #enviar {
+    margin: 90px;
+    background-color: rgb(35, 35, 139);
+    width: 25%;
+    font-size: 20px;
+    height: 9%;
+    padding: 20px;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 20px;
+    position: relative;
+    margin-left: -350px;
+    
+    
+    
+   }
+
+
+}
+
+
+@media (max-width: 924px) {
+
+#enviar:hover {
+  background-color: white;
+  width: 25%;
+  font-size: 20px;
+  height: 9%;
+  padding: 20px;
+  color: rgb(35, 35, 139);}
+
+}
+
+
+
+
+@media (max-width: 805px) {
+
+  #enviar {
+    margin: 90px;
+    background-color: rgb(35, 35, 139);
+    width: 30%;
+    font-size: 20px;
+    height: 9%;
+    padding: 20px;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 20px;
+    position: relative;
+    margin-left: -350px;
+    
+    
+    
+   }
+
+
+}
+
+
+@media (max-width: 805px) {
+
+  #enviar:hover {
+    background-color: white;
+    width: 30%;
+    font-size: 20px;
+    height: 9%;
+    padding: 20px;
+    color: rgb(35, 35, 139);}
+  
+  }
+
+
+
+
+
+@media (max-width: 940px) {
+
+  #boton {
+    background-color: rgb(35, 35, 139);
+    width: 30%;
+    font-size: 30px;
+    height: 9%;
+    padding: 20px;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 20px;
+    margin-top: 100px;
+    margin-left: 200px;
+    
+    
+  
+  }
+
+
+}
+
+
+@media (max-width: 1007px) {
+
+  .infopersonal {
+
+    padding: 45px;
+    border: 1px solid rgb(35, 35, 139);
+    font-size: 20px;
+    width: 500px;
+    border-radius: 30px;
+    margin-top: -40px;
+    margin-bottom: -10px;
+   
+    
+ }
+ 
+
+
+}
+
+@media (max-width: 940px) {
+
+  #perfil{
+    border-radius: 75px;
+    width: 150px;
+    margin-left: 350px;
+    margin-top: 20px;
+    border: 3px solid rgb(238, 238, 248);
+    
+   }
+
+
+}
+
+
+@media (max-width: 900px) {
+
+  #perfil{
+    border-radius: 75px;
+    width: 150px;
+    margin-left: 250px;
+    margin-top: 20px;
+    border: 3px solid rgb(238, 238, 248);
+    
+   }
+
+
+}
+
+
+@media (max-width: 1072px) {
+
+  #titulo {
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(35, 35, 139);;
+    color: white;
+    margin-bottom: -10px;
+    font-size: 30px;
+}
+
+
+
+}
+
+
+@media (max-width: 1029px) {
+
+  #titulo {
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(35, 35, 139);;
+    color: white;
+    margin-bottom: -10px;
+    font-size: 25px;
+}
+
+
+
+}
+
+
+@media (max-width: 885px) {
+
+  #titulo {
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(35, 35, 139);;
+    color: white;
+    margin-bottom: -10px;
+    font-size: 20px;
+}
+
+
+
+}
+
+
+@media (max-width: 1007px) {
+
+  #persona{
+    color: rgb(35, 35, 139);
+    width: 40%;
+    height: 30%;
+    padding: 20px;
+    border-radius: 30px;
+    margin-bottom: -300px;
+    margin-top: 190px;
+    
+    
+  
+  }
+
+
+}
+
+
+@media (max-width: 1007px) {
+
+  #exp{
+    color: rgb(35, 35, 139);
+    width: 40%;
+    height:4%;
+    padding: 20px;
+    border-radius: 30px;
+    
+  }
+  
+
+}
+
+@media (max-width: 990px) {
+
+    .menuh {
+  
+  
+      display: grid;
+      grid-template-columns: 100%;
+      width: 100%;
+      height: auto;
+      text-align: center;
+      justify-content: center;
+    }
+  }
+
+
+
+  @media (max-width: 990px) {
+  .menuv {
+
+
+    display: none;
+
+    width: 70%;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+
+
+  }
 }

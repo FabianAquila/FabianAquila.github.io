@@ -9,32 +9,37 @@
     <link rel="icon" href="imagenes/cv.ico">
     <title>Curriculum Vitae</title>
 </head>
-<body>
-   
 
+<button class="btn-scrolltop" id="btn_scrolltop">
+    <img src="imagenes/flechaarriba.png" alt="flechaarriba" height="29px" width="30px">
+</button>
     
-
-    <header>
+     <body>
         
-        <img src="imagenes/perfil.jpg" alt="perfil" id="perfil">
+    <header>
+        <a id="darkmode" href="javascript:void(0)">Modo oscuro</a>
+
+        <img src="imagenes/perfil.jpg" alt="Imagen de perfil" id="perfil">
         <div class="redes">
-       <a href="https://www.instagram.com/"><img src="imagenes/instalogo.ico" alt="" height="29px" width="30px"></a> <p>Instagram</p> 
-       <a href="https://outlook.live.com/"><img src="imagenes/outlook.ico" alt="" height="29px" width="30px"></a> <p>Correo</p>
-       <a href="https://www.linkedin.com/"><img src="imagenes/linkedin.ico" alt="" height="29px" width="30px"></a>  <p>Linkedin</p> 
+       <a href="https://www.instagram.com/"><img src="imagenes/instalogo.ico" alt="Instagram" height="29px" width="30px"></a> <p>Instagram</p> 
+       <a href="https://outlook.live.com/"><img src="imagenes/outlook.ico" alt="Outlook" height="29px" width="30px"></a> <p>Correo</p>
+       <a href="https://www.linkedin.com/"><img src="imagenes/linkedin.ico" alt="Linkedin" height="29px" width="30px"></a>  <p>Linkedin</p> 
         </div>
     </header>
     
-    <aside></aside>
+    <aside>   
+    </aside>
     <main>
       
     
         <h1 id="titulo">Roberto Martinez Diseñador UI UX, Desarrollador Web</h1>
      
+        <button class="descargarcv"><a download="Curriculum Vitae" href="pdf/Curriculum Vitae.pdf">Descargar CV</a></button>
+        
+
       <div id="contmenu">
-    <nav>
+      <nav>
          <ul class="menuh">
-    
-       
         <li><a href="#">Sobre mi</a>
             <ul class="menuv">
                 <li><a href="#persona">Infopersonal</a></li>
@@ -51,9 +56,11 @@
         </li>
         <li><a href="#boton">Contacto</a></li>
        
-    </ul>
-    </nav>
+        </ul>
+      </nav>
     </div> 
+
+    
 
      <div class="conteinergeneral">
      <h2 id="persona">Informacion Personal</h2>
@@ -67,9 +74,8 @@
        <li>Localidad: CABA </li>
        <li>Email: Roberto_Martinez45@gmail.com </li>
        <li>Telefono: 1187892778 </li> 
-
         </ul> 
-    
+ 
     <section>
     </div> 
     
@@ -85,48 +91,32 @@
         </ul> 
      
     </div> 
-    <section>
-      
+    <section>    
     <h2 id="idioma">Idioma</h2>
     <div class="conteiner">  
     <section class="infopersonal">
-        
             <ul class="listaper">
            <li>Ingles: Avanzado</li>
            <li>Portugues: Basico</li>
            <li>Italiano: Intermedio</li>
-           
-    
-            </ul> 
-        
+            </ul>    
         <section>
-        </div>
+    </div>
                 
                  
-                <h2 id="exp">Experiencia Laboral</h2>
-                <div class="conteiner">  
-                <section class="infopersonal" >
+     <h2 id="exp">Experiencia Laboral</h2>
+     <div class="conteiner">  
+     <section class="infopersonal" >
                 
-                    <ul class="listaper">
-                   <li>Data Entry: 1997-2003</li>
-                   <li>Desarrollador Web: 2003-2010</li>
-                   <li>Analisis en sistemas: 2011-2022</li>
+         <ul class="listaper">
+         <li>Data Entry: 1997-2003</li>
+         <li>Desarrollador Web: 2003-2010</li>
+         <li>Analisis en sistemas: 2011-2022</li>
                    
             
-                    </ul> 
-                
-
-                
-            
-                <section> 
-               
-                    
-
-
-                </div>
-
-                
-
+        </ul>           
+            <section> 
+                </div> 
                 <h2 id="habilidades">Habilidades</h2>
                 <div class="conteiner">  
                 <section class="infopersonal" >
@@ -138,19 +128,9 @@
                    <li>Phyton</li>
                    <li>Node.js</li>
                    <li>Vue.js</li>
-                   <li>Bootstrap</li>
-                   
-            
+                   <li>Bootstrap</li>    
                     </ul> 
-                
-
-                
-            
                 <section> 
-               
-                    
-
-
                 </div>
                       
 
@@ -158,7 +138,6 @@
                 <h2 id="aptitudes">Aptitudes</h2>
                 <div class="conteiner">  
                 <section class="infopersonal" >
-                
                     <p> Me destaco por ser una 
                         persona creativa, con 
                         muchas ganas en 
@@ -169,22 +148,12 @@
                         equipo, y las dinamicas 
                         que se produzcan en el 
                         proceso
- 
-
-
                     </p>
-                
-
-                
-            
-                <section> 
-               
-                 
-
-
+                  <section>
                 </div>
 
-                <button id="boton">Escribeme!</button>
+                <button id="boton">Escribeme!</button>  
+                
 
           
             </div>
@@ -221,6 +190,9 @@
                 </section>  
             </div>        
         
+
+        </main>
+
    
 
 
@@ -230,5 +202,5 @@
 
     <script src="jp.js"></script>
 
-</body>
+  </body>
 </html>
